@@ -10,7 +10,7 @@ function App() {
   const [duplistItem, setDupListItem] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 5;
+  const postsPerPage = 6;
 
   const handleSearch = (event) => {
     if (event.target.value.length === 0) {

@@ -7,18 +7,18 @@ import { Box } from "@material-ui/core";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 const useStyles = makeStyles({
   root: {
-    minWidth: 500
+    minWidth: 300
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
+
   title: {
     fontSize: 14
   },
   pos: {
     marginBottom: 8
+  },
+  center: {
+    display: "flex",
+    justifyContent: "center"
   },
   display: {
     display: "flex",
@@ -41,11 +41,19 @@ export default function Display({
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.pos} variant="h5" component="h1">
+        <Typography
+          className={(classes.pos, classes.center)}
+          variant="h5"
+          component="h1"
+        >
           <LocationOnIcon />
           {" " + name},{countryCode}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary" component="p">
+        <Typography
+          className={(classes.pos, classes.center)}
+          color="textSecondary"
+          component="p"
+        >
           Temp: {temp}°C
         </Typography>
         <Box className={classes.display}>
@@ -92,7 +100,7 @@ export default function Display({
           <Box className={classes.display}>
             <Box>Min - MaxTemp:-</Box>
             <Box>
-              {mintemp}°C-{maxtemp}°C
+              {" " + mintemp}°C- {" " + maxtemp}°C
             </Box>
           </Box>
         </Typography>
