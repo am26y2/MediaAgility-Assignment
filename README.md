@@ -14,3 +14,5 @@ Created a web app using open weather api(https://openweathermap.org/)
    a) If search result is empty, displaying the message: "No City Found Matching Your Result"
    b) While making a call to weather api, till the processing, displaying the message "Loading..."
    c) Search is based on universal data, i.e.; it is not limited to default displayed cities.
+
+4. TechStack: HTML5, CSS, BootStrap, JavaScript, ReactJS, Material-UI, WebApi
