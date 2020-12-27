@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: auto;
+  background-image: url("https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg");
+  background-color: lightslategray;
+}
+.search {
+  margin-top: 20px;
+}
+.conatiner {
+  height: 100vh;
+  width: 100vw;
+}
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+header {
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+  background-color: lightslategray;
+}
