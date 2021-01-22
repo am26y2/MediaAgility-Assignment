@@ -1,4 +1,4 @@
-# MediaAgility-Assignment
+# WeatherApp
 
 Created with CodeSandbox
 Created a web app using open weather api(https://openweathermap.org/)
